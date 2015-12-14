@@ -1,0 +1,10 @@
+C:\Users\luminary\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\bin\Debug\Logic.dll
+C:\Users\luminary\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\bin\Debug\Logic.pdb
+C:\Users\luminary\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\luminary\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\obj\Debug\Logic.dll
+C:\Users\luminary\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\obj\Debug\Logic.pdb
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\bin\Debug\Logic.dll
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\bin\Debug\Logic.pdb
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\obj\Debug\Logic.dll
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\Logic\obj\Debug\Logic.pdb

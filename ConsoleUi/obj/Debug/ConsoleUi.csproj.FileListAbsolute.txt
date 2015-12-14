@@ -1,0 +1,10 @@
+C:\Users\luminary\documents\visual studio 2015\Projects\EmploymentCenter\ConsoleUi\bin\Debug\ConsoleUi.dll
+C:\Users\luminary\documents\visual studio 2015\Projects\EmploymentCenter\ConsoleUi\bin\Debug\ConsoleUi.pdb
+C:\Users\luminary\documents\visual studio 2015\Projects\EmploymentCenter\ConsoleUi\obj\Debug\ConsoleUi.csprojResolveAssemblyReference.cache
+C:\Users\luminary\documents\visual studio 2015\Projects\EmploymentCenter\ConsoleUi\obj\Debug\ConsoleUi.dll
+C:\Users\luminary\documents\visual studio 2015\Projects\EmploymentCenter\ConsoleUi\obj\Debug\ConsoleUi.pdb
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\ConsoleUi\bin\Debug\ConsoleUi.dll
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\ConsoleUi\bin\Debug\ConsoleUi.pdb
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\ConsoleUi\obj\Debug\ConsoleUi.csprojResolveAssemblyReference.cache
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\ConsoleUi\obj\Debug\ConsoleUi.dll
+C:\Users\lmnr\Documents\Visual Studio 2015\Projects\EmploymentCenter\ConsoleUi\obj\Debug\ConsoleUi.pdb
