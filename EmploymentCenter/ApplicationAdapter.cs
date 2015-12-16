@@ -50,7 +50,10 @@ namespace EmploymentCenter
 
         }
 
+        #region Компания-Работодатель
+        
 
+        #endregion
         #region Безработный
 
         public void AddUnEmployed()
@@ -76,7 +79,7 @@ namespace EmploymentCenter
             if (Application.UnEmployedExists(res))
             {
                 var _new = InsertFieldForm("новое имя безработного");
-                var _new_summ = InsertFieldForm("новое название вакансии \n (если резюме то же, оставьте поле пустым\n");
+                var _new_summ = InsertFieldForm("новое название резюме \n (если резюме то же, оставьте поле пустым\n");
                 if (!string.IsNullOrWhiteSpace(_new))
                 {
                     Application.UnEmployeds.First(item => item.Name == res).Name = _new;
@@ -85,16 +88,77 @@ namespace EmploymentCenter
                         if (Application.SummaryExists(Application.UnEmployeds.First(item => item.Name == _new).Summary.Title))
                         {
                            Application.Summaries.First(item => item.UnEmployed.Name == _new).Title = _new_summ;
+                            _out.WriteLine("OK");
+                            return;
                         }
+                        else
+                        {
+                            ErrorReport("Резюме с таким названием не найдено");
+                        }
+
                     }
-                    _out.WriteLine("OK");
-                    return;
+                    else
+                    {
+                        ErrorReport("Резюме с пустым именем не допускается");
+                    }
+                       
                 }
+                else
+                {
+                    ErrorReport("Пустое имя не допускается");
+                }
+            }
+            else
+            {
+                ErrorReport("Безработного с таким именем не найдено");
             }
         }
 
-        #endregion
+        public void RemoveUnEmployed()
+        {
+            _out.WriteLine("[Изменение безработного]");
+            var res = InsertFieldForm("имя безработного");
+            if (Application.UnEmployedExists(res))
+            {
+                var ue = Application.UnEmployeds.First(item => item.Name == res);
+                Application.Summaries.Remove(ue.Summary);
+                ue.Summary = null;
+                Application.UnEmployeds.Remove(ue);
+                _out.WriteLine("OK");
+            }
+        }
 
+
+        public void DisplayUnEmployed()
+        {
+            _out.WriteLine("[Отображение информации безработного]");
+            var res = InsertFieldForm("Имя безработного");
+            if (Application.VacancyExists(res))
+            {
+                DisplayUnEmployedNode(Application.UnEmployeds.First(item => item.Name == res));
+                return;
+            }
+            ErrorReport("Безработного с таким именем не существует");
+
+
+        }
+
+        public void DisplayAllUnEmployed()
+        {
+            foreach (var unemployed in Application.UnEmployeds)
+            {
+                DisplayUnEmployedNode(unemployed);
+            }
+        }
+
+        private void DisplayUnEmployedNode(UnEmployed node)
+        {
+            _out.WriteLine($"Имя безработного:{node.Name}");
+            _out.WriteLine($"Название резюме безработного{node.Summary.Title}");
+            _out.WriteLine($"Дата резюме безработного{node.Summary.Title}");
+        }
+
+        #endregion
         #region Категория
         public void AddCategory()
         {
@@ -172,7 +236,6 @@ namespace EmploymentCenter
             _out.WriteLine($"\tКоличетсво вакансий:{node.Vacancies.Count}");
         }
         #endregion
-
         #region Базовые методы 
         protected bool ContinueForm()
         {
